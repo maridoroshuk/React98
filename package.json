@@ -1,1 +1,86 @@
-{"version":"0.1.0","license":"MIT","main":"dist/index.js","typings":"dist/index.d.ts","files":["dist","src"],"engines":{"node":">=10"},"scripts":{"start":"tsdx watch","build":"tsdx build","test":"tsdx test --passWithNoTests","lint":"tsdx lint","prepare":"tsdx build","size":"size-limit","analyze":"size-limit --why","storybook":"start-storybook -p 6006","build-storybook":"build-storybook"},"peerDependencies":{"react":">=16"},"husky":{"hooks":{"pre-commit":"tsdx lint"}},"prettier":{"printWidth":80,"semi":true,"singleQuote":true,"trailingComma":"es5"},"name":"react98","author":"Maryna Darashuk","module":"dist/react98.esm.js","size-limit":[{"path":"dist/react98.cjs.production.min.js","limit":"10 KB"},{"path":"dist/react98.esm.js","limit":"10 KB"}]}
+{
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why",
+    "sb": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "react98",
+  "author": "Maryna Darashuk",
+  "module": "dist/react98.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/react98.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/react98.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-typescript": "^7.18.6",
+    "@rollup/plugin-image": "^3.0.2",
+    "@size-limit/preset-small-lib": "^8.1.2",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-info": "^5.3.21",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/addons": "^6.5.16",
+    "@storybook/react": "^6.5.16",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.10",
+    "@types/styled-components": "^5.1.26",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "@zerollup/ts-transform-paths": "^1.7.18",
+    "babel-loader": "^9.1.2",
+    "babel-plugin-module-resolver": "^5.0.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-is": "^18.2.0",
+    "size-limit": "^8.1.2",
+    "styled-components": "^5.3.6",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.5.0",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "rollup-plugin-peer-deps-external": "^2.2.4"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "plugins": [
+    [
+      "babel-plugin-module-resolver",
+      {
+        "root": "./",
+        "alias": {
+          "@": "./src"
+        }
+      }
+    ]
+  ],
+  "presets": ["@babel/preset-typescript"]
+}
