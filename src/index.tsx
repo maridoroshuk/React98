@@ -1,5 +1,5 @@
-import { Button } from '@/components/Buttons/Button';
+import { Paragraph } from '@/components/Paragraph/Paragraph';
 
 export {
-    Button
+    Paragraph
 }
