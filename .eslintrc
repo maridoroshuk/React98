@@ -14,10 +14,12 @@
     "prettier",
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
-    "plugin:cypress/recommended"
   ],
   "plugins": ["prettier", "@typescript-eslint", "import", "simple-import-sort"],
   "rules": {
+    "import/prefer-default-export": "off",
+    "import/no-unresolved": "off",
+    "no-unused-vars": "error",
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",
     "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".ts"] }],
