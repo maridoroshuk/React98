@@ -11,23 +11,18 @@
     "node": ">=10"
   },
   "scripts": {
-    "start": "tsdx watch",
     "build": "tsdx build",
-    "test": "tsdx test --passWithNoTests",
-    "lint": "tsdx lint",
-    "prepare": "tsdx build",
+    "lint": "eslint . --ext .ts,.tsx",
+    "lint-fix": "eslint . --ext .ts,.tsx --fix",
+    "prettier": "prettier --write .",
+    "prepare": "husky install",
     "size": "size-limit",
     "analyze": "size-limit --why",
-    "sb": "start-storybook -p 6006",
+    "sb": "start-storybook -p 6006 -c .storybook watch-css -s ./src",
     "build-storybook": "build-storybook"
   },
   "peerDependencies": {
     "react": ">=16"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "tsdx lint"
-    }
   },
   "prettier": {
     "printWidth": 80,
@@ -57,6 +52,8 @@
     "@storybook/addon-info": "^5.3.21",
     "@storybook/addon-links": "^6.5.16",
     "@storybook/addons": "^6.5.16",
+    "@storybook/builder-webpack5": "^6.5.16",
+    "@storybook/manager-webpack5": "^6.5.16",
     "@storybook/react": "^6.5.16",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.10",
@@ -66,10 +63,13 @@
     "@zerollup/ts-transform-paths": "^1.7.18",
     "babel-loader": "^9.1.2",
     "babel-plugin-module-resolver": "^5.0.0",
+    "copy-webpack-plugin": "^11.0.0",
     "eslint-config-airbnb": "^19.0.4",
+    "eslint-import-resolver-typescript": "^3.5.3",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
     "prettier": "^2.8.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -78,7 +78,8 @@
     "styled-components": "^5.3.6",
     "tsdx": "^0.14.1",
     "tslib": "^2.5.0",
-    "typescript": "^4.9.5"
+    "typescript": "^4.9.5",
+    "webpack": "^5.75.0"
   },
   "dependencies": {
     "rollup-plugin-peer-deps-external": "^2.2.4"

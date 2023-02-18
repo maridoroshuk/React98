@@ -1,8 +1,8 @@
 import React from 'react';
 import { addDecorator } from '@storybook/react';
 import { ThemeProvider } from 'styled-components';
-import { theme } from '../src/theme/theme';
-import GlobalStyle from '../src/theme/globalStyles';
+import { theme } from '@/theme/theme';
+import GlobalStyle from '@/theme/globalStyles';
 
 addDecorator((story) => (
   <>
@@ -14,5 +14,4 @@ addDecorator((story) => (
 export const parameters = {
   actions: { argTypesRegex: '^on.*' },
   layout: 'centered',
-
 };
