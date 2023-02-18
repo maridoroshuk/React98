@@ -41,4 +41,4 @@ jobs:
       - run: npm i
       - run: npm run build
       - run: npm run lint
-      - run: npm run prettier
+      - run: npm run prettier --check .
