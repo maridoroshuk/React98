@@ -1,4 +1,3 @@
-
 const path = require('path');
 
 module.exports = async ({ config }) => {
@@ -9,11 +8,11 @@ module.exports = async ({ config }) => {
       {
         loader: 'file-loader',
         query: {
-          name: '[name].[ext]'
-        }
-      }
+          name: '[name].[ext]',
+        },
+      },
     ],
-    include: path.resolve(__dirname, '../')
+    include: path.resolve(__dirname, '../'),
   });
 
   return config;

@@ -13,22 +13,16 @@
   "scripts": {
     "build": "tsdx build",
     "lint": "eslint . --ext .ts,.tsx",
+    "lint-fix": "eslint . --ext .ts,.tsx --fix",
     "prettier": "prettier --write .",
     "prepare": "husky install",
     "size": "size-limit",
     "analyze": "size-limit --why",
     "sb": "start-storybook -p 6006 -c .storybook watch-css -s ./src",
-    "build-storybook": "build-storybook",
-    "pre-commit": "npm run lint --fix && prettier && git add -A ."
+    "build-storybook": "build-storybook"
   },
   "peerDependencies": {
     "react": ">=16"
-  },
-  "lint-staged": {
-    "*.{ts,tsx}": [
-      "prettier --write",
-      "eslint --ext .ts,.tsx --fix"
-    ]
   },
   "prettier": {
     "printWidth": 80,
@@ -71,6 +65,7 @@
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
     "prettier": "^2.8.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
