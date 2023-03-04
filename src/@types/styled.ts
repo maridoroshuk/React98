@@ -5,5 +5,14 @@ declare module 'styled-components' {
     colors: {
       [index: string]: string;
     };
+    spaces: {
+      [index: string]: string;
+    };
+    borders: {
+      [index: string]: string;
+    };
+    fonts: {
+      [index: string]: string;
+    };
   }
 }
