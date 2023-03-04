@@ -1,3 +1,3 @@
-import { Paragraph } from '@/components/Paragraph/Paragraph';
+import { Button } from '@/components/Button';
 
-export { Paragraph };
+export { Button };

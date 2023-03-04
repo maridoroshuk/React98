@@ -40,7 +40,9 @@
         "ts": "never",
         "tsx": "never"
       }
-    ]
+    ],
+    "@typescript-eslint/no-empty-function": "off",
+    "react/jsx-props-no-spreading": "off"
   },
   "overrides": [
     {
