@@ -14,4 +14,13 @@ addDecorator((story) => (
 export const parameters = {
   actions: { argTypesRegex: '^on.*' },
   layout: 'centered',
+  backgrounds: {
+    default: 'default',
+    values: [
+      {
+        name: 'default',
+        value: theme.colors.surface,
+      },
+    ],
+  },
 };
